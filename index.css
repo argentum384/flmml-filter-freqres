@@ -1,0 +1,15 @@
+th, td {
+	padding: 0;
+}
+
+#inputNote, #inputDetune, #inputFrq, #inputRes {
+	width: 4em;
+}
+
+#spanNote, #spanFilter {
+	font-size: small;
+}
+
+#divGraph {
+	color: red;
+}

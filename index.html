@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<title>flmml-filter-freqres</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="index.js"></script>
+
+<table>
+	<tr>
+		<th>Note Number
+		<td>
+			<input
+					type="number"
+					id="inputNote"
+					value="60"
+					placeholder="MIDI Note Number"
+					min="0" max="127">
+			<span id="spanNote"></span>
+	<tr>
+		<th>Detune
+		<td>
+			<input type="number"
+					id="inputDetune"
+					value="0"
+					placeholder="cent (-99 - 99)"
+					min="-99" max="99">
+	<tr>
+		<th>Filter Type
+		<td>
+			<select id="selectType">
+				<option value="1" selected>LPF1
+				<option value="2">LPF2
+				<option value="-1">HPF1
+				<option value="-2">HPF2
+			</select>
+	<tr>
+		<th>Cut-off Frequency
+		<td>
+			<input
+					type="number"
+					id="inputFrq"
+					value="69"
+					placeholder="Frequency (0 - 127)"
+					min="0" max="127">
+	<tr>
+		<th>Resonance
+		<td>
+			<input
+					type="number"
+					id="inputRes"
+					value="0"
+					placeholder="Resonance (0 - 127)"
+					min="0" max="127">
+</table>
+<button id="btnDraw">Draw</button>
+(Click or press Enter key)
+<div id="divGraph"></div>
